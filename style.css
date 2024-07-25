@@ -2,4 +2,51 @@
 #container{
     height: 100vh;
     background-size: 4%;
+    padding-top: 7%;
+}
+
+.post{
+    background: rgba(var(--bs-tertiary-bg-rgb),0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.user-info{
+    background: var(--bs-dark-bg-subtle);
+    border-radius: 20px;
+}
+
+.avatar{
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 10%;
+    display: inline-block;
+}
+.name{
+    display: inline-block;
+    vertical-align: baseline;
+}
+.displayname{
+    color: var(--bs-body-color);
+}
+
+.username{
+    color: var(--bs-secondary-color);
+    font-size: 80%; 
+}
+
+.streak{
+    color: rgba(var(--bs-warning-rgb),0.4);
+    display: inline-block;
+}
+
+.streak-image{
+    max-width: 10%;
+    opacity: 0.4;
+}
+
+body{
+    overflow-x: hidden;
 }

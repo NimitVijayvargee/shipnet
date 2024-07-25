@@ -2,15 +2,12 @@ function setMouseMoveListener(color1, color2) {
     function mouseMoveHandler(event) {
         var body = document.body;
         var navbar = document.getElementById("navbar");
-        var x = event.clientX;
-        var y = event.clientY;
+        var x = event.clientX + scrollX;
+        var y = event.clientY + scrollY;
         body.style.background = `radial-gradient(circle at ${x}px ${y}px, ${color1}, ${color2} 12%)`;
     }
 
-    // Remove any existing mousemove event listeners
     document.removeEventListener('mousemove', document.mouseMoveHandler);
-
-    // Add the new mousemove event listener
     document.mouseMoveHandler = mouseMoveHandler;
     document.addEventListener('mousemove', mouseMoveHandler);
 }
@@ -25,6 +22,7 @@ function dark_mode() {
 }
 
 function light_mode() {
+    //flashbang; will remove in future update cuz it is really annoying goddamn
     var html = document.getElementById("HTML");
     html.setAttribute("data-bs-theme", "light");
     var container = document.getElementById("container");
