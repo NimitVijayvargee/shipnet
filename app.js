@@ -6,10 +6,11 @@ function setMouseMoveListener(color1, color2) {
         var y = event.clientY + scrollY;
         body.style.background = `radial-gradient(circle at ${x}px ${y}px, ${color1}, ${color2} 12%)`;
     }
-
+    document.removeEventListener('scroll', document.mouseMoveHandler);
     document.removeEventListener('mousemove', document.mouseMoveHandler);
     document.mouseMoveHandler = mouseMoveHandler;
     document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('scroll', mouseMoveHandler);
 }
 
 function dark_mode() {
