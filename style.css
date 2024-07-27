@@ -1,64 +1,79 @@
-
-#container{
+#container {
     height: 100%;
-    background-size: 4%;
+    background-size: 3%;
     padding-top: 50px;
     padding-bottom: 50px;
     background-attachment: fixed;
 }
 
-.post{
-    background: rgba(var(--bs-tertiary-bg-rgb),0.6);
+.post {
+    background: rgba(var(--bs-secondary-bg-rgb), 0.6);
     backdrop-filter: blur(2px);
     border-radius: 30px;
     padding: 10px;
     padding-top: 10px;
+    margin : 30px;
 }
 
-.user-info{
+.user-info {
     background: var(--bs-dark-bg-subtle);
     border-radius: 20px;
 }
 
-.avatar{
-    border-radius: 20px;
+.avatar {
+    border-radius: 20px 0px 0px 20px;
     max-width: 10%;
     display: inline-block;
-    mask-image: linear-gradient(90deg, rgba(0,0,0,1) 55%, rgba(254,254,254,0) 100%);
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 55%, rgba(254, 254, 254, 0) 100%);
 }
-.name{
+
+.name {
     display: inline-block;
     vertical-align: middle;
 }
-.displayname{
+
+.displayname {
     color: var(--bs-body-color);
 }
 
-.username, .channelname{
+.smaller-text {
     color: var(--bs-secondary-color);
-    font-size: 80%; 
-}
-
-.streak{
-    color: rgba(var(--bs-warning-rgb),0.4);
+    font-size: 80%;
     display: inline-block;
 }
 
-.streak-image{
+.streak {
+    color: rgba(var(--bs-warning-rgb), 0.4);
+    display: inline-block;
+}
+
+.streak-image {
     max-width: 10%;
     opacity: 0.4;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-.thumbnail{
+.thumbnail {
     max-width: 90%;
     margin: 5%;
     border-radius: 30px;
 }
 
-.content{
+.content {
     margin: 10px;
+}
+
+.tag {
+    background-color: rgba(var(--bs-tertiary-bg-rgb), 1);
+    padding: 3px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tag-img {
+    max-width: 20%;
+    display: inline-block;
 }
