@@ -1,18 +1,17 @@
 #container {
     height: 100%;
-    background-size: 40px 40px;
     padding-top: 50px;
     padding-bottom: 50px;
     background-attachment: fixed;
 }
 
 .post {
-    background: rgba(var(--bs-secondary-bg-rgb), 0.6);
+    background: rgb(var(--bs-secondary-bg-rgb));
     backdrop-filter: blur(2px);
     border-radius: 30px;
     padding: 10px;
     padding-top: 10px;
-    margin : 30px;
+    margin : 50px;
 }
 
 .user-info {
@@ -34,16 +33,18 @@
 
 .displayname {
     color: var(--bs-body-color);
+    font-family: var(--body-font);
 }
 
 .smaller-text {
     color: var(--bs-secondary-color);
+    font-family: var(--body-font);
     font-size: 80%;
     display: inline-block;
 }
 
 .streak {
-    color: rgba(var(--bs-warning-rgb), 0.4);
+    color: rgba(var(--streak-color-rgb), 0.4);
     display: inline-block;
 }
 
@@ -54,6 +55,7 @@
 
 body {
     overflow-x: hidden;
+    background-size: 40px 40px;
 }
 
 .thumbnail {
@@ -76,4 +78,5 @@ body {
 .tag-img {
     max-width: 20%;
     display: inline-block;
+    vertical-align: middle;
 }
