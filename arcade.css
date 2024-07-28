@@ -1,0 +1,10 @@
+[data-bs-theme="arcade"]{
+    --bs-body-bg:rgb(250, 239, 214);
+    --bs-body-bg-rgb: 250,239,214;
+    
+    --bs-secondary-bg:rgb(40, 204, 209);
+    --bs-secondary-bg-rgb:40,204,209;
+
+    --bs-tertiary-bg:rgb(250, 239, 214);
+    --bs-tertiary-bg-rgb: 250,239,214;
+}
