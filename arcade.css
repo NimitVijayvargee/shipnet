@@ -17,14 +17,4 @@
 
     --bs-body-color: rgb(255, 140, 55) !important;
     --body-font: Slackey; /*signature arcade font*/
-
-    
-.post {
-    transition: transform 0.5s;
-}
-
-.post:hover {
-    transform: rotate(0deg);
-    transform: scale(1.25);
-}
 }

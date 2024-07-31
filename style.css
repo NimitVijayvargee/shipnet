@@ -12,6 +12,7 @@
     padding: 10px;
     padding-top: 10px;
     margin : 50px;
+    transition: 0.5s;
 }
 
 .user-info {
@@ -79,4 +80,8 @@ body {
     max-width: 20%;
     display: inline-block;
     vertical-align: middle;
+}
+
+.post:hover {
+    transform: scale(1.01);
 }
