@@ -1,2 +1,2 @@
 # shipnet
-Deprecated in favour of [https://github.com/NimitVijayvargee/Hacknet/](Hacknet).
+Deprecated in favour of [Hacknet](https://github.com/NimitVijayvargee/Hacknet).
